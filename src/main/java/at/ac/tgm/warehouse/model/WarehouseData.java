@@ -33,10 +33,6 @@ public class WarehouseData {
 		this.timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
 
 	}
-	
-	/**
-	 * Setter and Getter Methods
-	 */
 
 	public ArrayList<Product> getProductData() {
 		return this.productData;

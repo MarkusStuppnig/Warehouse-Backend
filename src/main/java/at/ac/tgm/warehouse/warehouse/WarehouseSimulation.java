@@ -2,17 +2,15 @@ package at.ac.tgm.warehouse.warehouse;
 
 import at.ac.tgm.warehouse.model.WarehouseData;
 
-import java.util.Random;
-
 public class WarehouseSimulation {
 	
-	private double getRandomDouble( int inMinimum, int inMaximum ) {
-
-		double number = ( Math.random() * ( (inMaximum-inMinimum) + 1 )) + inMinimum; 
-		double rounded = Math.round(number * 100.0) / 100.0; 
-		return rounded;
-		
-	}
+//	private double getRandomDouble( int inMinimum, int inMaximum ) {
+//
+//		double number = ( Math.random() * ( (inMaximum-inMinimum) + 1 )) + inMinimum;
+//		double rounded = Math.round(number * 100.0) / 100.0;
+//		return rounded;
+//
+//	}
 
 	private int getRandomInt( int inMinimum, int inMaximum ) {
 
@@ -30,7 +28,7 @@ public class WarehouseSimulation {
 			{"Graz", "8010", "Weinbergstraße", "Graz Lager", "Österreich"}
 		};
 
-		int r = new Random().nextInt(2);
+		int r = getRandomInt(0,2);
 
 		WarehouseData data = new WarehouseData();
 		data.setWarehouseID(inID);
