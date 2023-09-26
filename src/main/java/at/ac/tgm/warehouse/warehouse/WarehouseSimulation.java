@@ -14,8 +14,8 @@ public class WarehouseSimulation {
 
 	private int getRandomInt( int inMinimum, int inMaximum ) {
 
-		double number = ( Math.random() * ( (inMaximum-inMinimum) + 1 )) + inMinimum; 
-		Long rounded = Math.round(number); 
+		double number = ( Math.random() * ( (inMaximum-inMinimum) )) + inMinimum;
+		Long rounded = Math.round(number);
 		return rounded.intValue();
 
 	}
